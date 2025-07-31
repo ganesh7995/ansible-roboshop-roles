@@ -10,8 +10,8 @@
     state: present
 
 - name: start and enable nginx
-  systemd:
-    name: nginx
+  ansible.builtin.service:
+    name: nginx:1.24
     state: started
     enabled: yes
 
