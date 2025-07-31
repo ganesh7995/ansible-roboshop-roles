@@ -10,6 +10,16 @@
     name: nginx
     state: present
 
+- name: Test nginx configuration
+  command: nginx -t
+  register: nginx_test
+  failed_when: nginx_test.rc != 0
+  changed_when: false
+
+- name: Show config test output
+  debug:
+    var: nginx_test.stdout_lines
+
 - name: Start nginx service
   systemd:
     name: nginx
