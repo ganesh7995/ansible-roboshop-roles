@@ -1,1 +1,9 @@
 CATALOGUE_HOST: catalogue.gana84s.site
+MONGODB_HOST: mongodb.gana84s.site
+MYSQL_HOST: mysql.gana84s.site
+CART: cart.gana84s.site
+PAYMENT: payment.gana84s.site
+RABBITMQ_HOST: rabbitmq.gana84s.site
+REDIS_HOST: redis.gana84s.site
+USER: user.gana84s.site
+SHIPPING_HOST: shipping.gana84s.site
