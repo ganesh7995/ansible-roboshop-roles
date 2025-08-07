@@ -24,7 +24,7 @@
     path: /app
 
 
-- name: "restart {{ component }}"
+- name: restart "{{ component }}"
   ansibile.builtin.service:
     name: "{{ component }}"
     state: restarted
