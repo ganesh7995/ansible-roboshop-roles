@@ -2,6 +2,7 @@
   ansible.builtin.service:
     name: "{{ component }}"
     state: stopped
+    ignore_errors: yes
 
 - name: remove the app directory
   ansible.builtin.file:
