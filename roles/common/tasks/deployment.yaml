@@ -23,6 +23,7 @@
   community.general.npm:
     path: /app
 
+
 - name: "restart {{ component }}"
   ansibile.builtin.service:
     name: "{{ component }}"
