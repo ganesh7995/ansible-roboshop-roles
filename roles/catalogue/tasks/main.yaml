@@ -28,7 +28,7 @@
   ansible.builtin.debug:
     msg: "{{ catalogue_output }}"
   ignore_errors: true
-  gnore_unreachable: true
+  ignore_unreachable: true
 
 # here we are using shell command because special charactors will not work with ansible command
 - name: load products
